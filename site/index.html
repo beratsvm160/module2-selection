@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Responsive Layout</title>
+<style>
+
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+  overflow: auto;
+}
+  div{
+  margin-right: 4px;
+  margin-left: 5px;
+  margin: auto;
+  padding: 5px;
+
+}
+h1 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+h2{
+  margin-right: auto;
+  margin-left: auto;
+  border: 1px solid black;
+  text-align: right;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  color: black;
+  background-color: green;
+}
+h3{
+  margin-right: auto;
+  margin-left: auto;
+  border: 1px solid black;
+  text-align: right;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  color: red;
+  background-color: purple;
+}
+h4{
+  margin-right: auto;
+  margin-left: auto;
+  border: 1px solid black;
+  text-align: right;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  color: blue;
+  background-color: orange;
+}
+
+p {
+  border: 1px solid black;
+  background-color: #A52A2A;
+  width: 100%;
+  height: 150px;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: Helvetica;
+  color: white;
+}
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+  border: 1px solid black;
+  background-color: red;
+  margin-right: 3px;
+  margin-left: auto;
+}
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left;
+  }
+  .col-lg-1 {
+    width: 8.33%;
+  }
+  .col-lg-2 {
+    width: 16.66%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-4 {
+    width: 33.33%;
+  }
+  .col-lg-5 {
+    width: 41.66%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-7 {
+    width: 58.33%;
+  }
+  .col-lg-8 {
+    width: 66.66%;
+  }
+  .col-lg-9 {
+    width: 74.99%;
+  }
+  .col-lg-10 {
+    width: 83.33%;
+  }
+  .col-lg-11 {
+    width: 91.66%;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+  }
+  .col-md-1 {
+    width: 8.33%;
+  }
+  .col-md-2 {
+    width: 16.66%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-4 {
+    width: 33.33%;
+  }
+  .col-md-5 {
+    width: 41.66%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-7 {
+    width: 58.33%;
+  }
+  .col-md-8 {
+    width: 66.66%;
+  }
+  .col-md-9 {
+    width: 74.99%;
+  }
+  .col-md-10 {
+    width: 83.33%;
+  }
+  .col-md-11 {
+    width: 91.66%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+@media (max-width: 767px){
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+    float: left;
+  }
+  .col-sm-1 {
+    width: 8.33%;
+  }
+  .col-sm-2 {
+    width: 16.66%;
+  }
+  .col-sm-3 {
+    width: 25%;
+  }
+  .col-sm-4 {
+    width: 33.33%;
+  }
+  .col-sm-5 {
+    width: 41.66%;
+  }
+  .col-sm-6 {
+    width: 50%;
+  }
+  .col-sm-7 {
+    width: 58.33%;
+  }
+  .col-sm-8 {
+    width: 66.66%;
+  }
+  .col-sm-9 {
+    width: 74.99%;
+  }
+  .col-sm-10 {
+    width: 83.33%;
+  }
+  .col-sm-11 {
+    width: 91.66%;
+  }
+  .col-sm-12 {
+    width: 100%;
+  }
+}
+
+</style>
+</head>
+<body>
+<h1>Responsive Layout</h1>
+
+ <div class="col-lg-4 col-md-6 col-sm-12"><h2>Pizza</h2><p>For your next meeting or romantic dinner, surprise your guests with this classic recipe for Pepperoni Pizza with Cheese Edge. It will be ready in no time and best of all, you can make the dough with a mixture of Italian spices to give it much more flavor. Also, the most special touch for this homemade pizza will be the edge filled with cheese.</p></div>
+  <div class="col-lg-4 col-md-6 col-sm-12"><h3>Fish</h3><p>Cut the heads off (optional, heads absorb too much oil). Gut the anchovy and wash with cold water, drain. Put them in a bowl, sprinkle the salt and blend.
+Pour the oil into a large skillet and heat it up over high-medium heat. Place the flour in a plate and dip the anchovy by holding from its tail. To remove the excess flour, shake the fish off.
+Fry till they turn to a red fried color, approximately for 4-5 minutes. Turn halfway through. When they are done, place the fried anchovy on a plate with paper towel to absorb the excess oil. Serve with lemon.
+Also arugula, lemon, onion and radish go well with fried anchovy.</p></div>
+  <div class="col-lg-4 col-md-12 col-sm-12"><h4>Chicken</h4><p>1 cup yogurt/¼ cup olive oil/2 Tbsp lemon juice/2 garlic cloves, minced/1 tsp rosemary/1 Tbsp thyme/1 tsp salt to taste/½ tsp black pepper/4 chicken thighs-breasts/Mix all the marinade ingredients in a bowl. Then, add the chicken breasts or thighs (I prefer thighs) into the marinade. Cover them all over and allow marinade for 2-4 hours in the refrigerator.
+Cook them over the barbeque grill until both sides are cooked. Discard the leftover marinade.
+Serve hot preferably with a side dish or salad.</p></div>
+</body>
+</html>
