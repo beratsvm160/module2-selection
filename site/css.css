@@ -37,6 +37,7 @@ h3{
 }
 h4{
   margin-right: auto;
+  float: right;
   margin-left: auto;
   border: 1px solid black;
   text-align: right;

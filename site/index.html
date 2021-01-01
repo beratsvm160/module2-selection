@@ -12,11 +12,7 @@
   overflow: auto;
 }
   div{
-  margin-right: 4px;
-  margin-left: 5px;
-  margin: auto;
-  padding: 5px;
-
+  
 }
 h1 {
   margin-bottom: 15px;
@@ -25,6 +21,7 @@ h1 {
 h2{
   margin-right: auto;
   margin-left: auto;
+  float: right;
   border: 1px solid black;
   text-align: right;
   margin: 0;
@@ -36,6 +33,7 @@ h2{
 h3{
   margin-right: auto;
   margin-left: auto;
+  float: right;
   border: 1px solid black;
   text-align: right;
   margin: 0;
@@ -46,6 +44,7 @@ h3{
 }
 h4{
   margin-right: auto;
+  float: right;
   margin-left: auto;
   border: 1px solid black;
   text-align: right;
@@ -57,32 +56,30 @@ h4{
 }
 
 p {
-  border: 1px solid black;
-  background-color: #A52A2A;
   width: 100%;
   height: 150px;
   margin: 0;
   padding: 0;
   font-size: 14px;
-  margin-right: auto;
-  margin-left: auto;
   font-family: Helvetica;
   color: white;
 }
 
 /* Simple Responsive Framework. */
 .row {
-  width: 100%;
+  width: 90%;
+  margin-right: 4px;
+  margin-left: 5px;
   border: 1px solid black;
-  background-color: red;
-  margin-right: 3px;
-  margin-left: auto;
+  background-color: brown;
+  margin-bottom: 9px;
 }
 
 /********** Large devices only **********/
 @media (min-width: 992px) {
   .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
     float: left;
+   
   }
   .col-lg-1 {
     width: 8.33%;
@@ -94,7 +91,7 @@ p {
     width: 25%;
   }
   .col-lg-4 {
-    width: 33.33%;
+    width: 32.33%;
   }
   .col-lg-5 {
     width: 41.66%;
@@ -143,7 +140,7 @@ p {
     width: 41.66%;
   }
   .col-md-6 {
-    width: 50%;
+    width: 47%;
   }
   .col-md-7 {
     width: 58.33%;
@@ -161,7 +158,7 @@ p {
     width: 91.66%;
   }
   .col-md-12 {
-    width: 100%;
+    width: 95.25%;
   }
 }
 @media (max-width: 767px){
@@ -202,7 +199,7 @@ p {
     width: 91.66%;
   }
   .col-sm-12 {
-    width: 100%;
+    width: 94%;
   }
 }
 
@@ -211,13 +208,13 @@ p {
 <body>
 <h1>Responsive Layout</h1>
 
- <div class="col-lg-4 col-md-6 col-sm-12"><h2>Pizza</h2><p>For your next meeting or romantic dinner, surprise your guests with this classic recipe for Pepperoni Pizza with Cheese Edge. It will be ready in no time and best of all, you can make the dough with a mixture of Italian spices to give it much more flavor. Also, the most special touch for this homemade pizza will be the edge filled with cheese.</p></div>
-  <div class="col-lg-4 col-md-6 col-sm-12"><h3>Fish</h3><p>Cut the heads off (optional, heads absorb too much oil). Gut the anchovy and wash with cold water, drain. Put them in a bowl, sprinkle the salt and blend.
+ <div class="col-lg-4 col-md-6 col-sm-12 row"><h2>Pizza</h2><p>For your next meeting or romantic dinner, surprise your guests with this classic recipe for Pepperoni Pizza with Cheese Edge. It will be ready in no time and best of all, you can make the dough with a mixture of Italian spices to give it much more flavor. Also, the most special touch for this homemade pizza will be the edge filled with cheese.</p></div>
+  <div2 class="col-lg-4 col-md-6 col-sm-12 row"><h3>Fish</h3><p>Cut the heads off (optional, heads absorb too much oil). Gut the anchovy and wash with cold water, drain. Put them in a bowl, sprinkle the salt and blend.
 Pour the oil into a large skillet and heat it up over high-medium heat. Place the flour in a plate and dip the anchovy by holding from its tail. To remove the excess flour, shake the fish off.
 Fry till they turn to a red fried color, approximately for 4-5 minutes. Turn halfway through. When they are done, place the fried anchovy on a plate with paper towel to absorb the excess oil. Serve with lemon.
-Also arugula, lemon, onion and radish go well with fried anchovy.</p></div>
-  <div class="col-lg-4 col-md-12 col-sm-12"><h4>Chicken</h4><p>1 cup yogurt/¼ cup olive oil/2 Tbsp lemon juice/2 garlic cloves, minced/1 tsp rosemary/1 Tbsp thyme/1 tsp salt to taste/½ tsp black pepper/4 chicken thighs-breasts/Mix all the marinade ingredients in a bowl. Then, add the chicken breasts or thighs (I prefer thighs) into the marinade. Cover them all over and allow marinade for 2-4 hours in the refrigerator.
+Also arugula, lemon, onion and radish go well with fried anchovy.</p></div2>
+  <div3 class="col-lg-4 col-md-12 col-sm-12 row"><h4>Chicken</h4><p>1 cup yogurt/¼ cup olive oil/2 Tbsp lemon juice/2 garlic cloves, minced/1 tsp rosemary/1 Tbsp thyme/1 tsp salt to taste/½ tsp black pepper/4 chicken thighs-breasts/Mix all the marinade ingredients in a bowl. Then, add the chicken breasts or thighs (I prefer thighs) into the marinade. Cover them all over and allow marinade for 2-4 hours in the refrigerator.
 Cook them over the barbeque grill until both sides are cooked. Discard the leftover marinade.
-Serve hot preferably with a side dish or salad.</p></div>
+Serve hot preferably with a side dish or salad.</p></div3>
 </body>
 </html>
